@@ -9,3 +9,13 @@ This repository contains an extensive Visual Studio project template and an elem
  5. How to implementation [IWizard](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.templatewizard.iwizard?view=visualstudiosdk-2017&viewFallbackFrom=visualstudiosdk-2019) interface?
  6. How to create a form and how to shown this form when create an item?
  7. How to debug VSIX project?
+ 
+#### Quarantine Template Project Structure
+
+| Project Name| Project Type | |
+| ------------ | ------------ |------------ |
+| QuarantineTemplate.sln | Blank Solution | |
+| QuarantineTemplate | VSIX Project | **Startup Project** |
+| QuarantineEntityTemplate |  C# Item Template Project | |
+| QuarantineRepositoryTemplate |  C# Item Template Project | |
+| QuarantineWizard |  Class Library (.NET Framework 4.8) |   |  |
