@@ -19,3 +19,18 @@ This repository contains an extensive Visual Studio project template and an elem
 | QuarantineEntityTemplate |  C# Item Template Project | |
 | QuarantineRepositoryTemplate |  C# Item Template Project | |
 | QuarantineWizard |  Class Library (.NET Framework 4.8) |   |  |
+
+#### Quarantine Template Directory Structure
+
+```bash
+├── QuarantineTemplate
+│   ├── src
+│   │   ├── QuarantineTemplate
+│   │   ├── QuarantineEntityTemplate
+│   │   ├── QuarantineRepositoryTemplate
+│   │   ├── QuarantineWizard
+├── README.md
+├── LICENSE
+├── QuarantineTemplate.sln
+└── .gitignore
+```
