@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>EntityTemplate</Name>
+		<Description>Create empty classes file for trackable entity.</Description>
+		<Icon>EntityTemplate.ico</Icon>
+		<TemplateID>075c3814-a13d-4117-b5cf-d4b25e95e30f</TemplateID>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<DefaultName>Entity.cs</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>System</Assembly>
+			</Reference>
+		</References>
+		<ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Entity.cs</ProjectItem>
+		<CustomParameters>
+			<CustomParameter Name="$schemaname$" Value="Schema"/>
+			<CustomParameter Name="$idtype$" Value="Guid"/>
+			<CustomParameter Name="$title$" Value="Create an empty entity class file."/>
+		</CustomParameters>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>QuarantineWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=0baa2b7a93a6e0b4</Assembly>
+		<FullClassName>QuarantineWizard.Wizards.WizardEntityClass</FullClassName>
+	</WizardExtension>
+	<WizardData>
+		<WizardData Name="description">Some user defined data here.</WizardData>
+	</WizardData>
+</VSTemplate>
