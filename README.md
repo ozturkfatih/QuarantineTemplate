@@ -26,11 +26,31 @@ This repository contains an extensive Visual Studio project template and an elem
 ├── QuarantineTemplate
 │   ├── src
 │   │   ├── QuarantineTemplate
+|   |   |   ├── QuarantineTemplatePackage.cs
+|   |   |   ├── source.extension.vsixmanifest
 │   │   ├── QuarantineEntityTemplate
+|   |   |   ├── Entity.cs
+|   |   |   ├── EntityTemplate.ico
+|   |   |   ├── EntityTemplate.vstemplate
 │   │   ├── QuarantineRepositoryTemplate
 │   │   ├── QuarantineWizard
+|   |   |   ├── ItemComponents
+|   |   |   |   |   ├── EntityClassComponent
+|   |   |   |   |   |   ├── FormEntityClassComponet.cs
+|   |   |   ├── Wizards
+|   |   |   |   ├── WizardEntityClass.cs
 ├── README.md
 ├── LICENSE
 ├── QuarantineTemplate.sln
 └── .gitignore
 ```
+#### Creating the Visual Studio extension project
+ 1. Create a new VSIX project within Visual Studio (New Project / Visual C# / Extensions) (VS2019)
+ 2. Select VSIX Project.
+ 3. QuarantineTemplate is a VSIX Project.
+ 
+#### Creating the Visual Studio item template project
+ 1. Create a new C# Item Template Project within Visual Studio (New Project / Visual C# / Extensions) (VS2019)
+ 2. Select C# Item Template.
+ 3. QuarantineEntityTemplate and QuarantineRepositoryTemplate are C# Item Template projects.
+ 
