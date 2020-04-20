@@ -1,4 +1,4 @@
-﻿namespace CoreFuncWizard.ItemComponents.RepositoryClassComponet
+﻿namespace QuarantineWizard.ItemComponents.RepositoryClassComponet
 {
     partial class FormRepositoryClassComponet
     {

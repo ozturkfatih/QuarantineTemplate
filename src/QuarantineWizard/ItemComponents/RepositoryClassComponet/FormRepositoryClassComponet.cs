@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace CoreFuncWizard.ItemComponents.RepositoryClassComponet
+namespace QuarantineWizard.ItemComponents.RepositoryClassComponet
 {
     public partial class FormRepositoryClassComponet : MetroForm
     {

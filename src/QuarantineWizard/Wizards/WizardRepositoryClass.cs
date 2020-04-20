@@ -1,4 +1,4 @@
-﻿using CoreFuncWizard.ItemComponents.RepositoryClassComponet;
+﻿using QuarantineWizard.ItemComponents.RepositoryClassComponet;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
