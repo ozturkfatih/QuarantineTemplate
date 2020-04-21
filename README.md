@@ -23,27 +23,30 @@ This repository contains an extensive Visual Studio project template and an elem
 #### Quarantine Template Directory Structure
 
 ```bash
-├── QuarantineTemplate
-│   ├── src
-│   │   ├── QuarantineTemplate
-|   |   |   ├── QuarantineTemplatePackage.cs
-|   |   |   ├── source.extension.vsixmanifest
-│   │   ├── QuarantineEntityTemplate
-|   |   |   ├── Entity.cs
-|   |   |   ├── EntityTemplate.ico
-|   |   |   ├── EntityTemplate.vstemplate
-│   │   ├── QuarantineRepositoryTemplate
-│   │   ├── QuarantineWizard
-|   |   |   ├── ItemComponents
-|   |   |   |   |   ├── EntityClassComponent
-|   |   |   |   |   |   ├── FormEntityClassComponet.cs
-|   |   |   ├── Wizards
-|   |   |   |   ├── WizardEntityClass.cs
-├── README.md
-├── LICENSE
-├── QuarantineTemplate.sln
-└── .gitignore
+    ├── QuarantineTemplate
+    │   ├── src
+    │   │   ├── QuarantineTemplate
+    │   │   │   └── QuarantineTemplatePackage.cs
+    │   │   │   └── source.extension.vsixmanifest
+    │   │   ├── QuarantineEntityTemplate
+    │   │   │   └── Entity.cs
+    │   │   │   └── EntityTemplate.ico
+    │   │   │   └── EntityTemplate.vstemplate
+    │   │   ├── QuarantineRepositoryTemplate
+    │   │   │   └── ...
+    │   │   ├── QuarantineWizard
+    │   │   │   ├── ItemComponents
+    │   │   │   │   ├── EntityClassComponent
+    │   │   │   │   │   └── FormEntityClassComponet.cs    
+    │   │   │   ├── Wizards
+    │   │   │   │   └── WizardEntityClass.cs
+    │   ├── files
+    │   └── QuarantineTemplate.sln
+    │   └── README.md
+    │   └── LICENSE
+    │   └── .gitignore
 ```
+
 #### Creating the Visual Studio extension project
  1. Create a new VSIX project within Visual Studio (New Project / Visual C# / Extensions) (VS2019)
  2. Select VSIX Project.
@@ -132,4 +135,31 @@ To use this project in the item template or the project template, the key.snk fi
 
 ![](https://raw.githubusercontent.com/ozturkfatih/QuarantineTemplate/master/files/img_key_snk.png)
 
+How read your key.snk public token. It's easy with Visual Studio. 
+Add new an external tool. Visual Studi -> Tools -> External Tools and open external tools window.
 
+![](https://raw.githubusercontent.com/ozturkfatih/QuarantineTemplate/master/files/img_exernal.png)
+
+Now run added external tool and get token.
+
+![](https://raw.githubusercontent.com/ozturkfatih/QuarantineTemplate/master/files/img_output_public.png)
+
+The token will use on project template or item template .vstemplate files.
+
+#### EntityTemplate.vstemplate file Wizard project dll usage
+
+![](https://raw.githubusercontent.com/ozturkfatih/QuarantineTemplate/master/files/img_template.png)
+
+#### How debug solution.
+
+ 1. Create a new console application in a directory close to your project.
+```bash
+    ├── Projects
+    │   ├── QuarantineTemplate
+    │   ├── QuarantineTemplateDebugger
+    │   │   └── QuarantineTemplateDebugger.sln
+```
+ 2. Open QuarantineTemplate properties debug tab and configure like this.
+ 
+ ![](https://raw.githubusercontent.com/ozturkfatih/QuarantineTemplate/master/files/img_debug.png)
+ 
