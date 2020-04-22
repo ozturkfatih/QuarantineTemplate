@@ -1,5 +1,5 @@
 # **Quarantine Template**
-This repository contains an extensive Visual Studio project template and an element template creation example.
+This repository contains an extensive Visual Studio project template and an item template creation example.
 
 #### What does this repository contain and what will you see?
  1. How to create [VSIX](https://docs.microsoft.com/en-us/visualstudio/extensibility/?view=vs-2019) project?
